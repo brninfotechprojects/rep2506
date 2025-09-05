@@ -2,15 +2,19 @@ import React, {  useState } from 'react'
 
 function Bhava() {
   let [dice,setdice]=useState([]);
+  let [image,setimages]=useState([]);
   let [roll,setroll]=useState(null);
   let dieceroll=()=>{
     let values =[];
+    let images=[];
     for(let i=0;i<roll;i++){
       let randomnumber=Math.floor(Math.random()*6+1);
       values.push(randomnumber);
+      images.push(`./images/die${randomnumber}.png`)
       
     }
     setdice(values)
+    setimages(images)
   }
   let incremeantroll=()=>{
      if(roll>=0){
@@ -35,6 +39,7 @@ function Bhava() {
       }} style={{position:"relative",left:"150px", bottom:"100px"}}>increment of dice  {`${roll}`}</button>
       <br></br>
       <p style={{position:"relative",left:"100px"}} >{incremeantroll()}</p>
+      <span>{`${image}`}</span> 
     </div>
   )
 }

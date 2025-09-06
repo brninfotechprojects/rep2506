@@ -36,3 +36,21 @@ button:hover{
   display:inline-block;
   text-decoration: underline;
 }
+.ganeshPic{
+  position: relative;
+  left : 320px;
+  width:300px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px;
+
+}
+.heading{
+  color:deeppink;
+  text-decoration: underline;
+}
+.a{
+ position: relative;
+ right:10px;
+ color:crimson;
+ font-size: 1.5rem;
+}
